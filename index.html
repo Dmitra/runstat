@@ -9,15 +9,20 @@
     <div id="body">
       <h1>#RUN #YEAR #STATS </h1>
       <div id="chart">
-        <svg class="rayChart"
+        <svg id="rayChart"
          xmlns="http://www.w3.org/2000/svg" 
          xmlns:xlink="http://www.w3.org/1999/xlink" >
         </svg>
+        <div id="legend">
+          <div id="date">17 Nov 2013</div>
+          <div id="distance">21.1 km</div>
+          <div id="pace">4.67 min/km</div>
+        </div>
       </div>
-      <div id="legend">
-        <div id="date"></div>
-        <div id="distance"></div>
-        <div id="pace"></div>
+    </div>
+    <div id="footer">
+      Run & design by <a href="behance.net/vslnko">Valera Vasylenko</a></br>
+      Visualization by <a href="/">Dmitra.com</a>
     </div>
 	
     <script src="/lib/lodash.js"></script>

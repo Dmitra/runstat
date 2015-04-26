@@ -1,30 +1,42 @@
 body {
   margin: 0;
-  font-size: 14px;
+  font-size: 62.5%;
   font-family: "Helvetica Neue", Helvetica;
 }
 h1 {
+  font-size: 4em;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 420px;
+  color: rgb(176, 126, 75);
 }
 #chart {
-  position: absolute;
-  top: 50px;
-  left: 0px;
+  overflow: hidden;
+  margin: auto;
+  width: 800px;
 }
 #legend {
-  position: absolute;
-  left: 370px;
-  top: 425px;
+  position: relative;
+  left: 365px;
+  top: -430px;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  height: 0px;
+}
+#footer {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  font-size: 1.6em;
+  line-height: 1.4em;
 }
 .labelMonths {
-  font-size: 1.1em;
+  font-size: 1.5em;
   text-anchor: start;
   color: grey;
 }
 .labelLabels {
-  font-size: 10px;
+  font-size: 1em;
   font-weight: bold;
   text-anchor: start;
   margin-left: 10px;
