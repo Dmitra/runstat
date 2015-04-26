@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica;
+}
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+#chart {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+#legend {
+  position: absolute;
+  left: 370px;
+  top: 425px;
+}
+.labelMonths {
+  font-size: 1.1em;
+  text-anchor: start;
+  color: grey;
+}
+.labelLabels {
+  font-size: 10px;
+  font-weight: bold;
+  text-anchor: start;
+  margin-left: 10px;
+}
+.barDISTANCE {
+  stroke: grey;
+  stroke-width: 2px;
+}
+.barPACE {
+  stroke: rgb(128,93,63);
+  stroke-width: 2px;
+}
+.circle30_MIN_MARK {
+  fill: rgb(128,93,63);
+}
+.belt {
+  stroke: rgba(128, 93, 63, 0.17);
+  stroke-width: rgba(128, 93, 63, 0.17);
+  fill: none;
+}
