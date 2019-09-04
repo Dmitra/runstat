@@ -1,3 +1,7 @@
+import d3 from 'd3'
+import _ from 'lodash'
+import './index.css'
+
 var TimeLib = require('plusjs/src/time/Time')
 var Radial = require('plusjs/src/layout/Radial')
 var rayDraw = require('plusjs/src/svg/radial/ray')
@@ -12,8 +16,6 @@ var container = d3.select('#chart>svg')
 
 //Data
 d3.csv('data/runstat.csv', function (data) {
-  Data = data
-
   var start = new Date(data[0].date)
   var end = new Date(_.last(data).date);
 
@@ -45,7 +47,7 @@ d3.csv('data/runstat.csv', function (data) {
     range: [230, 206], //pixels from center
   })
   var config30MinDistance = _.extend({}, config, {
-    name: '30_MIN_MARK',
+    name: 'MIN_MARK_30',
     position: function (d) {
       return TimeLib.daysPassed(start, new Date(d.date))
     },
@@ -146,10 +148,10 @@ function interactive () {
     document.querySelector('#legend>#pace').innerHTML = (TimeLib.decimalMinutes(d.time) / d.distance).toFixed(2) + ' min/km'
     document.querySelector('#legend>#date').innerHTML = d.date
   }
-  document.querySelector('#barDISTANCEGroup').addEventListener('mouseover', function (e) {
+  document.querySelector('.barGroup.DISTANCE ').addEventListener('mouseover', function (e) {
     showLegend(e.target.__data__)
   })
-  document.querySelector('#barPACEGroup').addEventListener('mouseover', function (e) {
+  document.querySelector('.barGroup.PACE').addEventListener('mouseover', function (e) {
     showLegend(e.target.__data__)
   })
 }

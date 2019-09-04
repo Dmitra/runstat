@@ -30,26 +30,26 @@ h1 {
   font-size: 1.6em;
   line-height: 1.4em;
 }
-.labelMonths {
+.Months + g .label {
   font-size: 1.5em;
   text-anchor: start;
   color: grey;
 }
-.labelLabels {
+.Labels + g .label {
   font-size: 1em;
   font-weight: bold;
   text-anchor: start;
   margin-left: 10px;
 }
-.barDISTANCE {
+.barGroup.DISTANCE {
   stroke: grey;
   stroke-width: 2px;
 }
-.barPACE {
+.barGroup.PACE {
   stroke: rgb(128,93,63);
   stroke-width: 2px;
 }
-.circle30_MIN_MARK {
+.MIN_MARK_30 circle {
   fill: rgb(128,93,63);
 }
 .belt {
